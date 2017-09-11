@@ -23,7 +23,8 @@ class Emitter {
 }
 class Child extends Emitter{
     constructor(name, id) {
-        super(name)
+        super(name) /* //if the sub-class has a constructor, it is compulsory to call super 
+        before using 'this' */
         this.id = id;
     }
     getName() {
